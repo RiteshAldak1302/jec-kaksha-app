@@ -1,11 +1,19 @@
 import React from 'react'
+import Login from './Login'
+import SIgnup from './SIgnup'
 
 const Navbar = () => {
+  // const ref = useRef(null)
+  // const refclose = useRef(null)
+  // const update =(current)=>{
+  //   ref.current.click()
+ 
+  // }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-primary bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-danger bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand " href="/"> <span className="title1"> JEC </span> <span className="title2"> Kaksha </span> </a>
+    <a className="navbar-brand" href="/"> <span className="title1"> JEC </span> <span className="title2"> Kaksha </span> </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -14,57 +22,45 @@ const Navbar = () => {
         <li className="nav-item mx-3 nav-link-ltr">
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li className="nav-item mx-3">
+        <li className="nav-item mx-3 active">
           <a className="nav-link" href="/">About</a>
         </li>
-        <li className="nav-item dropdown mx-3">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           First Year
+        <li className="nav-item  mx-3 active">
+          <a className="nav-link" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Notice
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="/">1st Semester</a></li>
-            <li><a className="dropdown-item" href="/">2nd Semester</a></li>
-            {/* <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Something else here</a></li> */}
+        </li>
+        <li className="nav-item dropdown mx-3 active">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          College
+          </a>
+          <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+          <li><a className="dropdown-item" href="/">First Year</a></li>
+          <li><hr class="dropdown-divider"/></li>
+            <li><a className="dropdown-item" href="/">Second Year</a></li> 
+            <li><hr class="dropdown-divider"/></li> 
+            <li><a className="dropdown-item" href="/">Third Year</a></li>  
+            <li><hr class="dropdown-divider"/></li>
+            <li><a className="dropdown-item" href="/">Forth Year</a></li>   
+            <li><hr class="dropdown-divider"/></li>              
+
           </ul>
         </li>
-        <li className="nav-item dropdown mx-3">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Second Year
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a className="dropdown-item" href="/">Electronics and Communication</a></li>
-            <li><a className="dropdown-item" href="/">Computer Science</a></li>  
-            <li><a className="dropdown-item" href="/">Information Technology</a></li>                 
-          </ul>
+        <li className="nav-item mx-3 active">
+          <a className="nav-link" href="/">Contact</a>
         </li>
-        <li className="nav-item dropdown mx-3">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Third Year
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a className="dropdown-item" href="/">Electronics and Communication</a></li>
-            <li><a className="dropdown-item" href="/">Computer Science</a></li>  
-            <li><a className="dropdown-item" href="/">Information Technology</a></li>                 
-          </ul>
-        </li>
-        <li className="nav-item dropdown mx-3">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Fourth Year
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a className="dropdown-item" href="/">Electronics and Communication</a>
-          </li>
-            <li><a className="dropdown-item" href="/">Computer Science</a></li>  
-            <li><a className="dropdown-item" href="/">Information Technology</a></li>                 
-          </ul>
-        </li>
+        
       </ul>
     
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-danger" type="submit">Search</button>
-      </form>
+      <Login/>
+      <SIgnup/>
+      <div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="/"class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="/" class="google"><i class="fa fa-google"></i></a> 
+  <a href="/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="/" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
     </div>
   </div>
 </nav>
