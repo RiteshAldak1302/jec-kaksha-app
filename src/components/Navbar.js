@@ -1,6 +1,7 @@
 import React from 'react'
 import Login from './Login'
 import SIgnup from './SIgnup'
+import Slider from './Slider';
 
 const Navbar = () => {
   // const ref = useRef(null)
@@ -11,11 +12,11 @@ const Navbar = () => {
   // }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-danger bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-danger" style={{"backgroundColor":"#081b24"}}>
   <div className="container-fluid">
     <a className="navbar-brand" href="/"> <span className="title1"> JEC </span> <span className="title2"> Kaksha </span> </a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <button className="navbar-toggler  navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon navbar-toggler-icon-light"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,10 +32,10 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item dropdown mx-3 active">
-          <a className="nav-link dropdown-toggle dropdown-toggle-light" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           College
           </a>
-          <ul className="dropdown-menu dropdown-menu-dark" style={{"backgroundColor":"white"}} aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu dropdown-menu-dark"  aria-labelledby="navbarDropdown">
           <li><a className="dropdown-item" href="/">First Year</a></li>
           <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="/">Second Year</a></li> 
@@ -54,23 +55,10 @@ const Navbar = () => {
     
       <Login/>
       <SIgnup/>
-      <ul id="social-sidebar">
-  <li>
-    <a className="entypo-twitter" href="/"><span>Tweeter</span></a>
-  </li>
-  <li>
-    <a className="entypo-facebook" href="/"><span>Facebook</span></a>
-  </li>
-  <li>
-    <a className="entypo-gplus" href="/"><span>Google+</span></a>
-  </li>
-  <li>
-    <a className="entypo-github" href="/"><span>Github</span></a>
-  </li>
-</ul>
     </div>
   </div>
 </nav>
+
         </div>
     )
 }

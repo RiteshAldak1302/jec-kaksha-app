@@ -58,8 +58,6 @@ font-family: 'Pacifico', cursive;
   position: relative;
   font-family: 'Comforter Brush', cursive;
 font-family: 'Lora', serif;
-
-
 }
 /* 
 .nav-link:hover {
@@ -87,10 +85,11 @@ font-family: 'Lora', serif;
 #social-sidebar {
 	left: 0;
 	position: fixed;
-	top: 70%;
+	top: 30%;
+  /* background-color: #081b24; */
 }
-/* #social-sidebar li:first-child a { border-top-right-radius: 5px; }
-#social-sidebar li:last-child a { border-bottom-right-radius: 5px; } */
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
 
 #social-sidebar a {
 	background: rgba(0, 0, 0, .7);
@@ -111,7 +110,7 @@ font-family: 'Lora', serif;
 	opacity: 1;
   text-decoration: none;
   list-style: 'none';
-	top: 70%;
+	top: 30%;
 }
 #social-sidebar a span {
   font: 12px "Open Sans", sans-serif;

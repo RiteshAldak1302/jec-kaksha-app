@@ -1,12 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Slider from './components/Slider';
+import Home from './components/Home';
 
 function App() {
   return (
     < >
      <Navbar/>
-     {/* <Slider/> */}
+     <Home/>
+     
+     
       
     </>
   );
