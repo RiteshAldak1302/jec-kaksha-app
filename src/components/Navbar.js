@@ -31,18 +31,18 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item dropdown mx-3 active">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle dropdown-toggle-light" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           College
           </a>
-          <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu dropdown-menu-dark" style={{"backgroundColor":"white"}} aria-labelledby="navbarDropdown">
           <li><a className="dropdown-item" href="/">First Year</a></li>
-          <li><hr class="dropdown-divider"/></li>
+          <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="/">Second Year</a></li> 
-            <li><hr class="dropdown-divider"/></li> 
+            <li><hr className="dropdown-divider"/></li> 
             <li><a className="dropdown-item" href="/">Third Year</a></li>  
-            <li><hr class="dropdown-divider"/></li>
+            <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="/">Forth Year</a></li>   
-            <li><hr class="dropdown-divider"/></li>              
+            <li><hr className="dropdown-divider"/></li>              
 
           </ul>
         </li>
@@ -54,13 +54,20 @@ const Navbar = () => {
     
       <Login/>
       <SIgnup/>
-      <div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="/"class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="/" class="google"><i class="fa fa-google"></i></a> 
-  <a href="/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="/" class="youtube"><i class="fa fa-youtube"></i></a> 
-</div>
+      <ul id="social-sidebar">
+  <li>
+    <a className="entypo-twitter" href="/"><span>Tweeter</span></a>
+  </li>
+  <li>
+    <a className="entypo-facebook" href="/"><span>Facebook</span></a>
+  </li>
+  <li>
+    <a className="entypo-gplus" href="/"><span>Google+</span></a>
+  </li>
+  <li>
+    <a className="entypo-github" href="/"><span>Github</span></a>
+  </li>
+</ul>
     </div>
   </div>
 </nav>
