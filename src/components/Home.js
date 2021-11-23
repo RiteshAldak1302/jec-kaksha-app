@@ -1,13 +1,14 @@
 import React from 'react'
 import Slider from './Slider'
-import Notice from './Notice'
+import College from './College'
+import Contact from './Contact'
 
 const Home = () => {
     return (
         <div>
             <Slider/>
-            <Notice/>
-            
+            <College/>   
+            <Contact/>         
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Login from './Login'
 import SIgnup from './SIgnup'
-import Slider from './Slider';
 
 const Navbar = () => {
   // const ref = useRef(null)
@@ -12,7 +11,7 @@ const Navbar = () => {
   // }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-danger" style={{"backgroundColor":"#081b24"}}>
+            <nav className="navbar navbar-expand-lg navbar" style={{"backgroundColor":"#081b24"}}>
   <div className="container-fluid">
     <a className="navbar-brand" href="/"> <span className="title1"> JEC </span> <span className="title2"> Kaksha </span> </a>
     <button className="navbar-toggler  navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

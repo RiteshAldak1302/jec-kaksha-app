@@ -6,17 +6,17 @@ import img3 from '../img/3.jpg'
 
 const Slider = () => {
     return (
-        <div>
-           <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade"  data-bs-touch="false" data-bs-interval="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={img1} class="d-block w-100" alt="..."/>
+        <div className="container-fluid" style={{"backgroundColor":"rgb(8, 27, 36)"}}>
+           <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade" style={{"height":"45vh"}}  data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner" style={{"height":"45vh"}}>
+    <div class="carousel-item active" >
+      <img src={img1}  class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={img2} class="d-block w-100" alt="..."/>
+      <img src={img2}  class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={img3} class="d-block w-100" alt="..."/>
+      <img src={img3}  class="d-block w-100" alt="..."/>
     </div>
   </div>
 
