@@ -11,43 +11,35 @@ const Navbar = () => {
   // }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar " style={{"backgroundColor":"#081b24"}}>
+            <nav className="navbar navbar-expand-lg navbar " style={{"backgroundColor":"#1c1b29"}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="/"> <span className="title1"> JEC </span> <span className="title2"> Kaksha </span> </a>
+    <a className="navbar-brand" href="/"> <span className="title1 heading-shadow"> JEC </span> <span className="title2 heading-shadow"> Kaksha </span> </a>
     <button className="navbar-toggler  navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon icon-bar navbar-toggler-icon-light"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item mx-3 nav-link-ltr">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+          <a className="nav-link active font hover-underline-animation" aria-current="page" href="/">Home</a>
         </li>
-        <li className="nav-item mx-3 active">
-          <a className="nav-link" href="/">About</a>
+        <li className="nav-item mx-3  ">
+          <a className="nav-link active font hover-underline-animation" href="/">About</a>
         </li>
-        <li className="nav-item  mx-3 active">
-          <a className="nav-link" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li className="nav-item  mx-3 ">
+          <a className="nav-link active font hover-underline-animation" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Notice
           </a>
         </li>
-        <li className="nav-item dropdown mx-3 active">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          College
-          </a>
-          <ul className="dropdown-menu dropdown-menu-dark"  aria-labelledby="navbarDropdown">
-          <li><a className="dropdown-item" href="/">First Year</a></li>
-          <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Second Year</a></li> 
-            <li><hr className="dropdown-divider"/></li> 
-            <li><a className="dropdown-item" href="/">Third Year</a></li>  
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Forth Year</a></li>   
-            <li><hr className="dropdown-divider"/></li>              
-
-          </ul>
+        <li className="nav-item mx-3  ">
+          <a className="nav-link active font hover-underline-animation" href="/">Services</a>
         </li>
-        <li className="nav-item mx-3 active">
-          <a className="nav-link" href="/">Contact</a>
+        <li className="nav-item  mx-3 ">
+          <a className="nav-link active font hover-underline-animation" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          opportunities
+          </a>
+        </li>
+        <li className="nav-item mx-3">
+          <a className="nav-link  active font hover-underline-animation" href="/">Contact</a>
         </li>
         
       </ul>
