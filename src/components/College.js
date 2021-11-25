@@ -3,9 +3,9 @@ import React from 'react'
 const College = () => {
     return (
         <div>
-            <div className="container-fluid" style={{"backgroundColor":"rgb(8, 27, 36)" ,"margin":"0px auto"}}>
+            <div className="container-fluid" style={{"backgroundColor":"#151320" ,"margin":"0px auto"}}>
                 <div className="heading d-flex justify-content-center">
-            <h1 className="text1 text-center my-3" style={{"fontSize":"58.6px" , "color":"white"}} >Welcome to <span className="text-head" style={{"color":"black"}}>JEC</span> <span className="text-head" style={{"color":"black"}} >KAKSHA</span> </h1>
+            <h1 className="text1 text-center my-3" style={{"fontSize":"58.6px" , "color":"white"}} >Welcome to <div className="center"> <span className="text-head heading-shadow2" style={{"color":"black"}}>JEC</span> <span className="text-head heading-shadow2" style={{"color":"black"}} >KAKSHA</span></div> </h1>
             </div>
             <h2 className="text-center my-3" style={{"color":"white"}}>Please Select Your Year !</h2>
             <div className="button-sec d-flex justify-content-center" style={{"height":"132px" }}>
