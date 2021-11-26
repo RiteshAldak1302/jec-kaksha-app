@@ -6,7 +6,7 @@ import img3 from '../img/3.jpg'
 
 const Slider = () => {
     return (
-        <div className="container-fluid embed-responsive" style={{"backgroundColor":"#151320"}}>
+        <div className="container-fluid " style={{"backgroundColor":"#151320","margin":"78.5px 0px 0px 0px"}}>
            <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade  auto"  data-bs-touch="false" data-interval="3000" data-bs-interval="false">
   <div class="carousel-inner" >
     <div class="carousel-item active" >

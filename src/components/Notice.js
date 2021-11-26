@@ -11,8 +11,6 @@ const Notice = () => {
             <h3 className="text-center notice-items"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusantium.</li></h3>  <hr />
             <h3 className="text-center notice-items"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusantium.</li></h3>  <hr />
             <h3 className="text-center notice-items"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusantium.</li></h3>  <hr />
-            <h3 className="text-center notice-items"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusantium.</li></h3>  <hr />
-           
             </div>
 
 
